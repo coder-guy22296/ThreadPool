@@ -6,11 +6,12 @@
 /*   By: cyildiri <cyildiri@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 18:21:21 by ssmith            #+#    #+#             */
-/*   Updated: 2017/06/29 14:09:40 by cyildiri         ###   ########.fr       */
+/*   Updated: 2017/06/30 01:29:38 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <pthread.h>
+#include <stdlib.h>
+#include <pthread.h>
 #include "queue.h"
 
 t_lst	*queue_enqueue(t_queue **queue, t_lst *new)

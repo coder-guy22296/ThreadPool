@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   queue_peek.c                                       :+:      :+:    :+:   */
+/*   tp_wait.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cyildiri <cyildiri@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/05 20:20:46 by iwagner           #+#    #+#             */
-/*   Updated: 2017/06/30 00:00:15 by cyildiri         ###   ########.fr       */
+/*   Created: 2017/06/29 23:51:06 by cyildiri          #+#    #+#             */
+/*   Updated: 2017/06/29 23:51:42 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <pthread.h>
-#include "queue.h"
+#include <semaphore.h>
+#include "thread_pool.h"
 
-void	*queue_peak(t_queue **queue)
+void	tp_wait(t_thread_pool *tp)
 {
-	void	*bundle;
-	t_lst	*node;
-
-	if (*queue)
-	{
-		pthread_mutex_lock(&(*queue)->mutex);
-		node = (*queue)->first;
-		if (node)
-			bundle = node->data;
-		pthread_mutex_unlock(&(*queue)->mutex);
-	}
-	return (bundle);
+	sem_wait(tp->done);
 }

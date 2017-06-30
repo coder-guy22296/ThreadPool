@@ -6,11 +6,12 @@
 /*   By: cyildiri <cyildiri@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 18:20:42 by ssmith            #+#    #+#             */
-/*   Updated: 2017/06/29 14:09:40 by cyildiri         ###   ########.fr       */
+/*   Updated: 2017/06/30 00:00:15 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include <pthread.h>
+#include <stdlib.h>
+#include <pthread.h>
 #include "queue.h"
 
 t_lst	*queue_pop_link(t_queue **queue)

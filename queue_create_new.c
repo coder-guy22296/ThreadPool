@@ -6,10 +6,11 @@
 /*   By: cyildiri <cyildiri@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 18:22:08 by ssmith            #+#    #+#             */
-/*   Updated: 2017/06/29 14:09:40 by cyildiri         ###   ########.fr       */
+/*   Updated: 2017/06/30 00:00:15 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 # include <pthread.h>
 #include "queue.h"
 

@@ -6,13 +6,14 @@
 /*   By: cyildiri <cyildiri@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/29 13:50:05 by cyildiri          #+#    #+#             */
-/*   Updated: 2017/06/29 16:13:34 by cyildiri         ###   ########.fr       */
+/*   Updated: 2017/06/29 23:58:29 by cyildiri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef QUEUE_H
 # define QUEUE_H
 # include <pthread.h>
+# include <stdio.h>
 
 typedef struct			s_lst
 {
